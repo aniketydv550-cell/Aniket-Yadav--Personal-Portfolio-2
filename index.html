@@ -1,106 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniket Yadav - Personal Portfolio</title>
-    <!-- We must reference styles.css (lowercase) because macOS can be case-insensitive, but it's best practice -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<!-- No copy mechanism on body using oncontextmenu and onselectstart -->
-<body oncontextmenu="return false;" onselectstart="return false;">
 
-    <header id="header">
-        <h1>Aniket Yadav - Personal Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <main>
-        <!-- 1. About Me Section -->
-        <section id="about" class="card">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="profile-pic-container">
-                    <!-- Referencing the newly uploaded professional picture -->
-                    <img src="profile_pro.jpg" alt="Aniket Yadav Profile" class="profile-pic" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22160%22%20height%3D%22160%22%20fill%3D%22%23334155%22%2F%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M80%2080a30%2030%200%201%200%200-60%2030%2030%200%200%200%200%2060zm-45%2050c0-25%2020-45%2045-45s45%2020%2045%2045v10H35v-10z%22%2F%3E%3C%2Fsvg%3E'">
-                </div>
-                <div class="about-text">
-                    <p>Hello! My name is Aniket Yadav. I am a student interested in web design and development. I enjoy learning new technologies and creating simple and useful websites. This portfolio shows some of my skills, projects, and interests in web development.</p>
+```
+<header id="header">
+    <h1>Aniket Yadav - Personal Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- 1. About Me Section -->
+    <section id="about" class="card">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+            <div class="profile-pic-container">
+                <img src="profile_pro.jpg"
+                    alt="Aniket Yadav Profile"
+                    class="profile-pic"
+                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Crect%20width%3D%22160%22%20height%3D%22160%22%20fill%3D%22%23334155%22%2F%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M80%2080a30%2030%200%201%200%200-60%2030%2030%200%200%200%200%2060zm-45%2050c0-25%2020-45%2045-45s45%2020%2045%2045v10H35v-10z%22%2F%3E%3C%2Fsvg%3E'">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Hello! My name is Aniket Yadav. I am a student interested in web design and development.
+                    I enjoy learning new technologies and creating simple and useful websites.
+                    This portfolio shows some of my skills, projects, and interests in web development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. My Skills Section -->
+    <section id="skills" class="card">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-list">
+
+            <div class="skill-row">
+                <div class="skill-name">HTML</div>
+                <div class="skill-desc">
+                    Creating structured and semantic web pages.
                 </div>
             </div>
-        </section>
 
-        <!-- 2. My Skills Section -->
-        <section id="skills" class="card">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-list">
-                <div class="skill-row">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-desc">Creating structured and semantic web pages.</div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-desc">Designing attractive and responsive web pages.</div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-name">GitHub</div>
-                    <div class="skill-desc">Managing and publishing website projects.</div>
+            <div class="skill-row">
+                <div class="skill-name">CSS</div>
+                <div class="skill-desc">
+                    Designing attractive and responsive web pages.
                 </div>
             </div>
-        </section>
 
-        <!-- 3. My Projects Section -->
-        <section id="projects" class="card">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-container">
-                <!-- Inner Card 1 -->
-                <div class="project-box">
-                    <h3>Personal Portfolio</h3>
-                    <p>A personal portfolio website created using semantic HTML and CSS to display my skills and projects.</p>
-                    <a href="https://github.com/aniketydv550-cell/Aniket-Yadav--Personal-Portfolio.git" class="btn">View Project</a>
-                </div>
-                <!-- Inner Card 2 -->
-                <div class="project-box">
-                    <h3>Student Profile Card</h3>
-                    <p>A simple student profile webpage created to practice HTML structure, CSS styling, and responsive design.</p>
-                    <a href="https://github.com/aniketydv550-cell/Aniket-Yadav--Personal-Portfolio-2.git" class="btn">View GitHub</a>
+            <div class="skill-row">
+                <div class="skill-name">GitHub</div>
+                <div class="skill-desc">
+                    Managing and publishing website projects.
                 </div>
             </div>
-        </section>
 
-        <!-- 4. Contact Me Section -->
-        <section id="contact" class="card">
-            <h2 class="section-title">Contact Me</h2>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Simulation)');">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" class="form-control" required></textarea>
-                </div>
-                <!-- Adding a wrapper to style the button correctly -->
-                <div style="text-align: left;">
-                    <button type="submit" class="btn">Send Message</button>
-                </div>
-            </form>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Aniket Yadav. All rights reserved.</p>
-    </footer>
+    <!-- 3. My Projects Section -->
+    <section id="projects" class="card">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-box">
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A personal portfolio website created using semantic HTML and CSS
+                    to display my skills and projects.
+                </p>
+
+                <a href="https://github.com/aniketydv550-cell/Aniket-Yadav--Personal-Portfolio.git"
+                    class="btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-box">
+                <h3>Student Profile Card</h3>
+
+                <p>
+                    A simple student profile webpage created to practice HTML structure,
+                    CSS styling, and responsive design.
+                </p>
+
+                <a href="https://github.com/aniketydv550-cell/Aniket-Yadav--Personal-Portfolio-2.git"
+                    class="btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View GitHub
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. Contact Me Section -->
+    <section id="contact" class="card">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Message sent! (Simulation)');">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+
+            <div style="text-align: left;">
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Aniket Yadav. All rights reserved.</p>
+</footer>
+```
+
 </body>
+
 </html>
