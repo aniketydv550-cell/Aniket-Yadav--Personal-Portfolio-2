@@ -8,32 +8,27 @@
 
 :root {
   /* Custom Colors - Clean Light Theme */
-  --bg-body: #f8fafc;        /* Very soft light gray/blue */
-  --bg-header: #ffffff;      /* Pure white */
-  --bg-card: #ffffff;        /* Pure white */
-  --bg-subcard: #f1f5f9;     /* Light gray for inner cards */
+  --bg-body: #f8fafc;
+  --bg-header: #ffffff;
+  --bg-card: #ffffff;
+  --bg-subcard: #f1f5f9;
   
-  --text-main: #334155;      /* Dark slate gray */
-  --text-muted: #475569;     /* Medium slate gray */
-  --text-heading: #0f172a;   /* Very dark slate */
+  --text-main: #334155;
+  --text-muted: #475569;
+  --text-heading: #0f172a;
   
-  --accent-primary: #6366f1; /* Vibrant eye-catchy Indigo */
-  --accent-secondary: #4f46e5; /* Darker Indigo for hover */
+  --accent-primary: #6366f1;
+  --accent-secondary: #4f46e5;
   
-  --border-color: #e2e8f0;   /* Light gray border */
+  --border-color: #e2e8f0;
   --input-bg: #ffffff;
 }
 
-/* Global Reset & Anti-Copy */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
 }
 
 input, textarea {
@@ -105,7 +100,7 @@ main {
   border-radius: 12px;
   padding: 40px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft, natural shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--border-color);
 }
 
@@ -200,14 +195,14 @@ main {
   color: var(--text-muted);
 }
 
-/* Custom Button Design (Professional & Clean) */
+/* Custom Button Design */
 .btn {
   display: inline-block;
   background-color: var(--accent-primary);
   color: white;
   text-decoration: none;
   padding: 10px 24px;
-  border-radius: 8px; /* Slightly rounded, more professional */
+  border-radius: 8px;
   font-weight: 600;
   font-family: 'Outfit', sans-serif;
   text-align: center;
