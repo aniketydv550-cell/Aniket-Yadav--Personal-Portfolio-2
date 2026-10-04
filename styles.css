@@ -1,0 +1,297 @@
+/* ==========================================================================
+   Aniket Yadav - Personal Portfolio
+   Structure: Exact match to reference image
+   Design: Clean Professional Light Theme (White)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Custom Colors - Clean Light Theme */
+  --bg-body: #f8fafc;        /* Very soft light gray/blue */
+  --bg-header: #ffffff;      /* Pure white */
+  --bg-card: #ffffff;        /* Pure white */
+  --bg-subcard: #f1f5f9;     /* Light gray for inner cards */
+  
+  --text-main: #334155;      /* Dark slate gray */
+  --text-muted: #475569;     /* Medium slate gray */
+  --text-heading: #0f172a;   /* Very dark slate */
+  
+  --accent-primary: #6366f1; /* Vibrant eye-catchy Indigo */
+  --accent-secondary: #4f46e5; /* Darker Indigo for hover */
+  
+  --border-color: #e2e8f0;   /* Light gray border */
+  --input-bg: #ffffff;
+}
+
+/* Global Reset & Anti-Copy */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-heading);
+}
+
+/* 1. Header Section */
+header {
+  background-color: var(--accent-primary);
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: none;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Main Content Area */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Card Containers */
+.card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft, natural shadow */
+  border: 1px solid var(--border-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--text-heading);
+}
+
+/* 2. About Me */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-pic-container {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-primary);
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.35);
+}
+
+.about-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* 3. My Skills */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--text-heading);
+  font-size: 1.1rem;
+}
+
+.skill-desc {
+  color: var(--text-muted);
+}
+
+/* 4. My Projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.project-box {
+  background-color: var(--bg-subcard);
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text-heading);
+}
+
+.project-box p {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Custom Button Design (Professional & Clean) */
+.btn {
+  display: inline-block;
+  background-color: var(--accent-primary);
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px; /* Slightly rounded, more professional */
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* 5. Contact Me */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--input-bg);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 6. Footer */
+footer {
+  background-color: var(--accent-primary);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  border-top: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skill-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .card {
+    padding: 25px 20px;
+  }
+}
