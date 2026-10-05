@@ -1,13 +1,11 @@
 /* ==========================================================================
    Aniket Yadav - Personal Portfolio
-   Structure: Exact match to reference image
-   Design: Clean Professional Light Theme (White)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  /* Custom Colors - Clean Light Theme */
+  /* Custom Colors */
   --bg-body: #f8fafc;
   --bg-header: #ffffff;
   --bg-card: #ffffff;
@@ -50,7 +48,7 @@ h1, h2, h3 {
   color: var(--text-heading);
 }
 
-/* 1. Header Section */
+/* Header Section */
 header {
   background-color: var(--accent-primary);
   padding: 30px 20px;
@@ -111,7 +109,7 @@ main {
   color: var(--text-heading);
 }
 
-/* 2. About Me */
+/* About Me */
 .about-content {
   display: flex;
   align-items: center;
@@ -142,7 +140,7 @@ main {
   color: var(--text-muted);
 }
 
-/* 3. My Skills */
+/* My Skills */
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -166,7 +164,7 @@ main {
   color: var(--text-muted);
 }
 
-/* 4. My Projects */
+/* My Projects */
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,7 +217,7 @@ main {
   box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
 }
 
-/* 5. Contact Me */
+/* Contact Me */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -259,7 +257,7 @@ textarea.form-control {
   resize: vertical;
 }
 
-/* 6. Footer */
+/* Footer */
 footer {
   background-color: var(--accent-primary);
   color: rgba(255, 255, 255, 0.9);
